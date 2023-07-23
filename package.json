@@ -1,4 +1,5 @@
 {
+  "homepage": "https://SharenEdd.github.io/car-rental-app",
   "name": "car-rental-app",
   "version": "0.1.0",
   "private": true,
@@ -10,7 +11,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.2",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "^2.1.3",
     "react-slick": "^0.29.0",
     "reactstrap": "^9.2.0",
     "remixicon": "^3.4.0",
@@ -19,6 +20,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -40,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
